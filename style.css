@@ -7,6 +7,18 @@ body{
     padding: 0;
 }
 
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
 header{
     width: 100%;
     display: flex;
@@ -144,5 +156,70 @@ section{
 .right{
     width:35%;
     min-width: 500px;
+}
+
+.about-skills-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 4rem 0; */
+}
+
+.about-skills-section > #skills-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-skills-section > #skills-container > ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 470px;
+}
+
+.about-skills-section > #skills-container > ul > li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-skills-section > #skills-container > ul > li > .skill-bar{
+    width: 120px;
+    height: 10px;
+    background-color: #E2E8F0;
+    border-radius: 5px;
+    position: relative;
+}
+.about-skills-section > #skills-container > ul > li > .skill-bar > .skill-level{
+    height: 100%;
+    background-color: #2463EB;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    /* transition: width 0.3s ease; */
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+
+#javascript{
+    width:90%;
+}
+
+#react{
+    width: 85%;
+}
+
+#nodejs{
+    width: 70%;
+}
+
+#mongodb{
+    width: 80%;
 }
 
