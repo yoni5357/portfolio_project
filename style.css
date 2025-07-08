@@ -1,0 +1,21 @@
+body{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    padding: 10px 100px;
+}
+
+header h2 {
+    font-size: 2rem;
+    color: #2463EB;
+    font-weight: bold;
+}
