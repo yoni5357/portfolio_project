@@ -1,6 +1,6 @@
 body{
     width: 100%;
-    max-width: 2000px;
+    max-width: 2300px;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,11 +13,11 @@ header{
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid #ccc;
-    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
 }
 
 header > .name-container{
-    width:50%;
+    width:45%;
 }
 
 header >.name-container> h2 {
@@ -31,7 +31,6 @@ header > nav {
     min-width: 500px;
     display: flex;
     justify-content: space-between;
-    /* gap: 20px; */
 }
 
 header > nav > ul{
@@ -51,9 +50,99 @@ header > nav > ul > li > a{
     font-weight: bold;
     color:#64748B;
 }
+section{
+    padding: 4rem 0;
+}
 
-.profile{
+.profile-section{
     width:100%;
+    height: 400px;
     display: flex;
     background-color: #EEF2F6;
+    justify-content: center;
+    align-items: center; 
 }
+
+#profile-container{
+    /* width:35%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+#profile-container > #profile-header{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#profile-container > #profile-header > h1{
+    margin: 0;
+}
+
+#profile-container > #profile-description{
+    font-size: 1rem;
+    color: #4B5563;
+    line-height: 1.6;
+    font-weight: bold;
+    max-width: 800px;
+}
+
+#profile-container > #profile-description > p{
+    margin: 0;
+}
+
+#profile-container > #profile-button > #get-in-touch{
+    width: 200px;   
+    height: 70px;
+    background-color: #2463EB;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#profile-container > #profile-button > #get-in-touch:hover{
+    background-color: #1D4ED8;
+}
+
+#profile-image-container{
+    /* width: 35%; */
+    height: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+#circle{
+    width: 380px;
+    height: 380px;
+    /* background-image: url('https://avatars.githubusercontent.com/u/123456789?v=4');
+    background-size: cover;
+    background-position: center; */
+    /* background-color: #2463EB; */
+    border-radius: 50%;
+    position: relative;
+}
+
+#circle > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.left{
+    width:50%;
+}
+
+.right{
+    width:35%;
+    min-width: 500px;
+}
+
