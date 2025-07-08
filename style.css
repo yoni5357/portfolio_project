@@ -47,8 +47,8 @@ header >.name-container> h2 {
 }
 
 header > nav {
-    width: 25%;
-    min-width: 500px;
+    width: 15%;
+    min-width: 400px;
     display: flex;
     justify-content: space-between;
 }
@@ -324,6 +324,77 @@ section{
     width: 120px;
     height: 40px;
     background-color: #F59E0B;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.contact-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-main{
+    width: 100%;
+    /* max-width: 800px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field > label{
+    font-size: 1rem;
+    color: #4B5563;
+    margin-bottom: 5px;
+}
+
+.form-field > input, .form-field > textarea{
+    width: 95%;
+    /* padding: 10px; */
+    border: 2px solid #E2E8F0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #4B5563;
+}
+
+.form-field > input{
+    height: 40px;
+}
+
+.form-field > textarea{
+    height: 100px;
+    /* resize: none; */
+}
+
+.form-button-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form-button{
+    width: 155px;
+    height: 45px;
+    background-color: #2463EB;
     color: white;
     border: none;
     border-radius: 8px;
