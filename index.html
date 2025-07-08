@@ -21,23 +21,23 @@
       </nav>
     </header>
     <section class="profile">
-      <div class="title-container">
+      <div id="title-container" class="left">
         <h1>Full-Stack Developer</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt nobis, 
           iste officia hic temporibus corrupti magnam nihil beatae ut voluptate exercitationem autem nostrum,
            libero facilis voluptatibus culpa ad quisquam odit!</p>
       </div>
-      <div class="profile-image">
+      <div id="profile-image" class="right">
         <img src="profile.jpg" alt="Profile Picture">
       </div>
     </section>
     <section class="about-skills">
-      <div class="about">
+      <div id="about" class="left">
         <h2>About Me</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. 
           Doloribus, cumque! Quasi, asperiores. Doloribus, cumque! Quasi, asperiores.</p>
       </div>
-      <div class="skills">
+      <div id="skills" class="right">
         <h2>Skills</h2>
         <ul>
           <li>HTML</li>
@@ -69,7 +69,7 @@
       <div class="contact-header">
         <h2>Contact Me</h2>
       </div>
-      <form action="#" method="post">
+      <form action="#" method="post" id="contact-form" class="left">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         
@@ -81,21 +81,29 @@
         
         <button type="submit">Send Message</button>
       </form>
-      <div class="contact-information">
-        <h3>Contact Information</h3>
-        <img src="email-icon.png" alt="Email Icon">
-        <p>yonatan.gorovetz@mail.huji.ac.il</p>
-        <img src="phone-icon.png" alt="Phone Icon">
-        <p>+972-54-1234567</p>
-        <img src="location-icon.png" alt="Location Icon">
-        <p>Jerusalem</p>
-      </div>
-      <div class="links">
+      <div id="contact-information" class="right">
+        <div id="contact-info-header">
+          <h3>Contact Information</h3>
+        </div>
+        <div id="email">
+          <img src="email-icon.png" alt="Email Icon">
+          <p>yonatan.gorovetz@mail.huji.ac.il</p>
+        </div>
+        <div id="phone">
+          <img src="phone-icon.png" alt="Phone Icon">
+          <p>+972-54-1234567</p>
+        </div>
+        <div id="location">
+          <img src="location-icon.png" alt="Location Icon">
+          <p>Jerusalem</p>
+        </div>
+        <div id="links">
         <ul>
           <li><a href="linkedin.com/in/yonatangorovetz">LinkedIn</a></li>
           <li><a href="github.com/YonatanGorovetz">GitHub</a></li>
           <li><a href="facebook.com/YonatanGorovetz">Twitter</a></li>
         </ul>
+      </div>
       </div>
     </section>
     <footer>
