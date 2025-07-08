@@ -25,6 +25,7 @@ p{
     color: #4B5563;
     line-height: 1.6;
     font-weight: bold;
+    margin:0;
 }
 
 header{
@@ -405,16 +406,44 @@ section{
 }
 
 #contact-information{
+    height: 400px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: flex-start;
+
 }
 
-#email, #phone, #location{
+#contact-info-header{
+    margin-bottom: 10px;
+}
+
+
+#contact-information > #email, #phone, #location{
     font-size: 1rem;
     color: #4B5563;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     display: flex;
+    align-items: center;
+}
+
+#email > img{
+    width: 20px;
+    height: 10px;
+}
+#phone > img{
+    width: 10px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+#location > img{
+    width: 10px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+#contact-information > #email, #phone, #location{
+    margin: 10px;
 }
 
 #links{
@@ -422,6 +451,7 @@ section{
     justify-content: center;
     align-items: center;
     justify-content: flex-start;
+    margin-top: 20px;
 
     /* gap: 20px; */
 }
