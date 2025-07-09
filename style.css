@@ -18,7 +18,7 @@ h2{
 
 h3{
     font-size: 1.5rem;
-    margin: 0;;
+    /* margin: 0;; */
 }
 
 p{
@@ -26,7 +26,7 @@ p{
     color: #4B5563;
     line-height: 1.6;
     font-weight: bold;
-    margin:0;
+    /* margin:0; */
 }
 
 header{
@@ -93,12 +93,12 @@ section{
 #profile-container > #profile-header{
     font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
 }
 
-#profile-container > #profile-header > h1{
+/* #profile-container > #profile-header > h1{
     margin: 0;
-}
+} */
 
 #profile-container > #profile-description{
     font-size: 1rem;
@@ -108,13 +108,13 @@ section{
     max-width: 800px;
 }
 
-#profile-container > #profile-description > p{
+/* #profile-container > #profile-description > p{
     margin: 0;
-}
+} */
 
 #profile-container > #profile-button > #get-in-touch{
-    width: 200px;   
-    height: 70px;
+    width: 180px;   
+    height: 60px;
     background-color: #2463EB;
     color: white;
     border: none;
