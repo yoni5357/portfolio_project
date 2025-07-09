@@ -69,6 +69,36 @@ header > nav {
     justify-content: space-between;
 }
 
+header > .menu-icon-container{
+    display: none;
+}
+
+@media(max-width: 601px){
+
+    header{
+        box-sizing: border-box;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    header > nav{
+        display: none;
+    }
+
+    header > .menu-icon-container{
+        display: block;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        fill: #64748B;
+    }
+
+    header > .menu-icon-container > svg{
+        width: 100%;
+        height: 100%;
+    }
+}
+
 header > nav > ul{
     width: 100%;
     list-style: none;
@@ -466,15 +496,35 @@ section{
     align-items: center;
 }
 
+@media(max-width: 601px){
+    .contact-main{
+        flex-direction: column;
+        /* padding: 20px; */
+    }
+}
+
 #contact-form{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
+@media(max-width: 601px){
+    #contact-form{
+        width: 90%;
+        align-items: center;
+    }
+}
+
 .form-field{
     display: flex;
     flex-direction: column;
+}
+
+@media(max-width: 601px){
+    .form-field{
+        width: 100%;
+    }
 }
 
 .form-field > label{
@@ -492,13 +542,32 @@ section{
     color: #4B5563;
 }
 
+@media(max-width: 601px){
+    .form-field > input, .form-field > textarea{
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
+
 .form-field > input{
     height: 40px;
+}
+
+@media(max-width: 601px){
+    .form-field > input{
+        height: 50px;
+    }
 }
 
 .form-field > textarea{
     height: 100px;
     /* resize: none; */
+}
+
+@media(max-width: 601px){
+    .form-field > textarea{
+        height: 130px;
+    }
 }
 
 .form-button-container{
@@ -507,8 +576,15 @@ section{
     align-items: center;
 }
 
+@media(max-width: 601px){
+    .form-button-container{
+        justify-content: center;
+        width: 100%;
+    }
+}
+
 .form-button{
-    width: 155px;
+    width: 125px;
     height: 45px;
     background-color: #2463EB;
     color: white;
@@ -520,12 +596,28 @@ section{
     transition: background-color 0.3s ease;
 }
 
+@media(max-width: 601px){
+    .form-button{
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+    }
+}
+
 #contact-information{
     height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 
+}
+
+@media(max-width: 601px){
+    #contact-information{
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
 }
 
 #contact-information > #email, #phone, #location{
