@@ -97,6 +97,14 @@ section{
     align-items: center; 
 }
 
+@media (max-width: 601px){
+    .profile-section{
+        flex-direction: column;
+        /* padding: 20px; */
+    }
+}
+    
+
 #profile-container{
     display: flex;
     flex-direction: column;
@@ -104,10 +112,23 @@ section{
     height: 100%;
 }
 
+@media (max-width: 601px){
+    #profile-container{
+        align-items: center;
+        width: 100%;
+    }
+}
+
 #profile-container > #profile-header{
     font-size: 2.5rem;
     font-weight: bold;
     /* margin-bottom: 0; */
+}
+
+@media (max-width: 601px){
+    #profile-container > #profile-header{
+        text-align: center;
+    }
 }
 
 
@@ -117,6 +138,13 @@ section{
     line-height: 1.6;
     font-weight: bold;
     max-width: 800px;
+}
+
+@media (max-width: 601px){
+    #profile-container > #profile-description{
+        text-align: center;
+        padding: 0 20px;
+    }
 }
 
 #profile-container > #profile-button > #get-in-touch{
@@ -130,6 +158,12 @@ section{
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+@media (max-width: 601px){
+    #profile-container > #profile-button > #get-in-touch{
+        margin-top: 10px;
+    }
 }
 
 #profile-container > #profile-button > #get-in-touch:hover{
