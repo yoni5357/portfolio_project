@@ -339,11 +339,18 @@ section{
 
 .projects-section > .project-list{
     width: 100%;
-    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 60px;
+}
+
+@media (max-width: 601px){
+    .projects-section > .project-list{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
 }
 
 .projects-section > .project-list > .project-item{
@@ -354,27 +361,40 @@ section{
 
 
 .project-item {
-    /* width: 80%; */
     max-width: 800px;
-    height: 100%;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     background-color: #E2E8F0;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 601px){
+    .projects-section > .project-list > .project-item{
+        width: 90%;
+        max-width: 600px;
+    }
+}
+
 .project-item > .image-container {
     width: 100%;
-    height: 100%;
+    height: 200px;
     flex:1.25;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.project-item > .image-container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .project-item > .sub-container {
