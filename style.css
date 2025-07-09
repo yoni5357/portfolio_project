@@ -224,6 +224,14 @@ section{
     padding-right: 60px;
 }
 
+@media (max-width: 601px){
+    .about-skills-section{
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 .about-skills-section > #about{
     box-sizing: border-box;
     display: flex;
@@ -232,6 +240,13 @@ section{
     padding-left: 30px;
     padding-right: 30px;
     flex:2;
+}
+
+@media (max-width: 601px){
+    .about-skills-section > #about{
+        text-align: center;
+        width: 100%;
+    }
 }
 
 .about-skills-section > #about > #about-content{
@@ -245,6 +260,16 @@ section{
     flex:1;
 }
 
+@media(max-width: 601px){
+    .about-skills-section > #skills-container{
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
 .about-skills-section > #skills-container > ul{
     list-style: none;
     padding: 0;
@@ -254,6 +279,13 @@ section{
     flex-direction: column;
     justify-content: space-around;
     max-width: 470px;
+}
+
+@media(max-width: 601px){
+    .about-skills-section > #skills-container > ul{
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
 .about-skills-section > #skills-container > ul > li{
