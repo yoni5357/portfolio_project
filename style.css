@@ -8,6 +8,14 @@ body{
     margin: auto;
 }
 
+@media (max-width: 601px){
+    body{
+        /* width: 100%; */
+        max-width: 600px;
+        margin: 0;
+    }
+}
+
 h1{
     font-size: 2.5rem;
 }
@@ -36,14 +44,22 @@ header{
     box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
 }
 
+@media (max-width: 601px){
+    header{
+        max-width: 600px;
+        /* padding: 20px 0; */
+    }
+}
+
 header > .name-container{
     width:45%;
 }
 
-header >.name-container> h2 {
-    font-size: 2rem;
+header >.name-container> h3 {
+    /* font-size: 2rem; */
     color: #2463EB;
     font-weight: bold;
+    /* margin: 0; */
 }
 
 header > nav {
